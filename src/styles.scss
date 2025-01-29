@@ -1,0 +1,25 @@
+// styles.scss
+body {
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
+
+.side-menu {
+  width: 200px;
+  float: left;
+}
+
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+button {
+  margin: 5px;
+}

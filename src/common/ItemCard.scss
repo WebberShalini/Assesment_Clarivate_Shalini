@@ -1,0 +1,53 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns all child elements to the left */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 16px; /* Adds padding inside the item card */
+  margin-bottom: 16px; /* Adds space between items */
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px; /* Adds space between the image and the text */
+  }
+
+  p {
+    margin: 0 0 10px 0; /* Adds space below the paragraph */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left; /* Ensures the text is left-aligned */
+    color: #333;
+  }
+
+  .btn-toggle-favorite {
+    padding: 8px 16px;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: left;
+
+    &:hover {
+      background-color: #e619a1;
+      transition: background-color 0.3s ease;
+    }
+
+    &.favorite {
+      background-color: #e619a1;
+
+      &:hover {
+        background-color: #d1058d;
+      }
+    }
+  }
+}
